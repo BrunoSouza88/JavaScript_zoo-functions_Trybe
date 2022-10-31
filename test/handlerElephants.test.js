@@ -5,7 +5,7 @@ describe('Testes da função HandlerElephants', () => {
     expect(handlerElephants('count')).toEqual(4);
   });
   it('Elephants Names', () => {
-    expect(handlerElephants('names')).toEqual('Ilana', 'Orval', 'Bea', 'Jefferson');
+    expect(handlerElephants('names')).toEqual(['Ilana', 'Orval', 'Bea', 'Jefferson']);
   });
   it('Elephants Age Average', () => {
     expect(handlerElephants('averageAge')).toEqual(10.5);
@@ -21,5 +21,11 @@ describe('Testes da função HandlerElephants', () => {
   });
   it('Parameter not a String', () => {
     expect(handlerElephants(5)).toBe('Parâmetro inválido, é necessário uma string');
+  });
+  it('Parameter undefined', () => {
+    expect(handlerElephants(undefined)).toEqual(undefined);
+  });
+  it('Parameter empty object', () => {
+    expect(handlerElephants('{}')).toBe(null);
   });
 });
