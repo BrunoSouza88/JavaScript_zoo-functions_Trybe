@@ -10,4 +10,16 @@ describe('Testes da função HandlerElephants', () => {
   it('Elephants Age Average', () => {
     expect(handlerElephants('averageAge')).toEqual(10.5);
   });
+  it('Elephants Popularity', () => {
+    expect(handlerElephants('popularity')).toEqual(5);
+  });
+  it('Elephants Location', () => {
+    expect(handlerElephants('location')).toEqual('NW');
+  });
+  it('Elephants availability', () => {
+    expect(handlerElephants('availability')).toEqual(['Friday', 'Saturday', 'Sunday', 'Tuesday']);
+  });
+  it('Parameter not a String', () => {
+    expect(handlerElephants(5)).toBe('Parâmetro inválido, é necessário uma string');
+  });
 });
