@@ -1,4 +1,4 @@
-# **JavaScript Zoo Functions** 🐘
+# **Zoo Functions** 🐘
 
 ## **Description** 🚀
 As a developer with expertise in ES6, Higher Order Functions, and testing, I was given an important mission by the city hall: to organize the zoo’s information!
